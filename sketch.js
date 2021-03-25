@@ -179,9 +179,7 @@ function countMovement() {
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
                     break;
                 }
-                
-               
-                
+              
                 if (rightKnee.y > leftKnee.y + poseOffset) {
                     stageResult[0] += 1
                 } else if (leftKnee.y > rightKnee.y + poseOffset) {
@@ -191,8 +189,6 @@ function countMovement() {
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
                     break;
                 }
-                
-               
                 
                 if (rightKnee.y > leftKnee.y + poseOffset) {
                     stageResult[0] += 1
