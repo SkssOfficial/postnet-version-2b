@@ -202,9 +202,9 @@ function countMovement() {
                                 
                 break;
             case '2':
-                   if (leftKnee.y > leftElbow.y + poseOffset && leftKnee.confidence > confidenceOffset && leftElbow.confidence > confidenceOffset) {
+                   if (leftKnee.y > leftElbow.y + 5 && leftKnee.confidence > confidenceOffset && leftElbow.confidence > confidenceOffset) {
                     stageResult[0] += 1
-                } else if (rightKnee.y > rightElbow.y + poseOffset && rightKnee.confidence > confidenceOffset && rightElbow.confidence > confidenceOffset) {
+                } else if (rightKnee.y > rightElbow.y + 5 && rightKnee.confidence > confidenceOffset && rightElbow.confidence > confidenceOffset) {
                     stageResult[1] += 1
                 }
                 break;
